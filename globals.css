@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+@import "leaflet/dist/leaflet.css";
+
+
+
+/* =========================
+   VITAL GLOBAL THEME
+   ========================= */
+:root {
+  --background: #ECFAF1;
+  /* App background */
+  --foreground: #166534;
+  /* Green-800 text */
+
+  --vital-primary: #16A34A;
+  /* green-600 */
+  --vital-dark: #14532D;
+  /* green-900 */
+  --vital-soft: #F0FDF4;
+  /* very light green */
+
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+/* =========================
+   RESET / BASE FIXES
+   ========================= */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* If Geist classes appear, neutralize safely */
+.geist_a71539c9-module__T19VSG__variable,
+.geist_mono_8d43a2aa-module__8Li5zG {
+  all: unset;
+}
